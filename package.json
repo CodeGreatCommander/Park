@@ -1,0 +1,25 @@
+{
+  "name": "parking",
+  "version": "1.0.0",
+  "description": "",
+  "main": "login.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodeGreatCommander/Park.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodeGreatCommander/Park/issues"
+  },
+  "homepage": "https://github.com/CodeGreatCommander/Park#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongod": "^2.0.0",
+    "mongodb": "^5.1.0",
+    "mongoose": "^7.0.3"
+  }
+}
