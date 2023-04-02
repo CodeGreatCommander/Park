@@ -1,0 +1,2 @@
+User:name,email,password,date of birth, past reservation, Bank Accounts, City
+Parking: organisation name, organisation email, phone number, parking location ,operation hours
