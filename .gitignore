@@ -1,3 +1,4 @@
 **/node_modules/
 workplan.txt
 server/database/Schema/*.js
+password_confi.txt
