@@ -14,7 +14,8 @@ app.get('/Order.Sell',(req,res)=>{
     res.send(Order_Sell(req.params.orgemail,req.params.password));
 });
 app.put('/Order',(req,res)=>{
-
+    const Order_Add=require("../database/database_functions/Order_Add");
+    res.send(Order_Add(req.params));
 });
 
 app.listen(port);

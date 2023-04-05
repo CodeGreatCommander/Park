@@ -8,3 +8,4 @@ const Order_Add=async(params)=>{
     await UserSchema.findById(params.user_id).then((person)=>{data=person.order;})
     data.concat({org_id:params.org_id,user_id:user_id,time_start:time_start,time_end:time_end,payment_status:payment_status})
 };
+module.exports={Order_Add};
