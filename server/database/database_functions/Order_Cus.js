@@ -1,4 +1,4 @@
-import { UserSchema } from "../Schema/UserSchema";
+const {UserSchema}=require("../Schema/UserSchema");
 const Order_Cus=async (email,password)=>{
     return await UserSchema.findOne({email:email}).then((person)=>{
         //returning null if password wrong

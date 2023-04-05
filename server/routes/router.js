@@ -10,7 +10,8 @@ app.get('/Order.Cus',(req,res)=>{
     res.send(Order_Cus(req.params.email,req.params.password));
 });
 app.get('/Order.Sell',(req,res)=>{
-
+    const Order_Sell=require('../database/database_functions/Order_Sell');
+    res.send(Order_Sell(req.params.orgemail,req.params.password));
 });
 app.put('/Order',(req,res)=>{
 

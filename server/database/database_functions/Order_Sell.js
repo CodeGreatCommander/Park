@@ -1,6 +1,6 @@
-import { SellerSchema } from "../Schema/UserSchema";
+const {SellerSchema}=require("../Schema/UserSchema");
 const Order_Sell=async (orgemail,password)=>{
-    return await UserSchema.findOne({orgemail:orgemail}).then((person)=>{
+    return await SellerSchema.findOne({orgemail:orgemail}).then((person)=>{
         //returning null if password wrong
         if(person.password!=password)return null;
         var data=[];
@@ -10,4 +10,4 @@ const Order_Sell=async (orgemail,password)=>{
         return data; 
     })
 };
-module.exports={Order_Cus};
+module.exports={Order_Sell};
